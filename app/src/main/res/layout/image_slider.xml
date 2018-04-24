@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/netflix_relative"
+    tools:context="com.sllider.alto.imageslider.Imageslider">
+
+    <HorizontalScrollView
+        android:id="@+id/horiztonal_scrollview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="100dp"
+
+        >
+        <LinearLayout
+            android:id="@+id/horiztonal_outer_layout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+
+            >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <ImageView android:src="@drawable/right"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:id="@+id/next"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="108dp"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/next"
+        />
+    <ImageView android:src="@drawable/left"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:id="@+id/previous"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
